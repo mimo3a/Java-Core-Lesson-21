@@ -15,10 +15,9 @@ import java.util.Arrays;
 public class DogsApp  {
 	public static void main(String[] args) throws IOException, ClassNotFoundException {
 		getAnnotFields(Dogs.class);
+		Dogs dog = new Dogs("a", "a", "a", 1, 2);
 		
-		
-
-		
+				
 	}
 	public static void getAnnotFields (Class <Dogs> dog) throws NotSerializableException, IOException, ClassNotFoundException {
 		Field[] fields = dog.getDeclaredFields();
